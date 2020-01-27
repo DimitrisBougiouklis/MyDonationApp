@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_full_case_description"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FullCaseDescription">
+
+    <TextView
+        android:id="@+id/fullNameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fullDescriptionTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Full Description"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/fullNameTxt"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/fullNameTxt"
+        app:layout_constraintTop_toBottomOf="@+id/fullNameTxt" />
+
+    <TextView
+        android:id="@+id/expirationDateTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Expiration Date"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/fullDescriptionTxt"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/fullDescriptionTxt"
+        app:layout_constraintTop_toBottomOf="@+id/fullDescriptionTxt" />
+
+    <TextView
+        android:id="@+id/iBan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:text="Case's Iban"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/amountNeededTxt"
+        app:layout_constraintTop_toBottomOf="@+id/expirationDateTxt" />
+
+    <Button
+        android:id="@+id/saveCaseBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Save Case"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/amountNeededTxt"
+        app:layout_constraintTop_toBottomOf="@+id/amountNeededTxt" />
+
+    <Button
+        android:id="@+id/contributeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contribute"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/iBan"
+        app:layout_constraintTop_toTopOf="@+id/saveCaseBtn" />
+
+    <TextView
+        android:id="@+id/amountNeededTxt"
+        android:layout_width="110dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="96dp"
+        android:text="Amount Needed"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/expirationDateTxt"
+        app:layout_constraintTop_toBottomOf="@+id/expirationDateTxt" />
+</androidx.constraintlayout.widget.ConstraintLayout>

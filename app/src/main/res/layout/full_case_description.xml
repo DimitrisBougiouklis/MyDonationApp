@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/NameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="32dp"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fullDescriptionTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Description"
+        app:layout_constraintEnd_toEndOf="@+id/NameTxt"
+        app:layout_constraintStart_toStartOf="@+id/NameTxt"
+        app:layout_constraintTop_toBottomOf="@+id/NameTxt" />
+
+    <TextView
+        android:id="@+id/expirationDateTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Expiration Date"
+        app:layout_constraintEnd_toEndOf="@+id/fullDescriptionTxt"
+        app:layout_constraintStart_toStartOf="@+id/fullDescriptionTxt"
+        app:layout_constraintTop_toBottomOf="@+id/fullDescriptionTxt" />
+
+    <Button
+        android:id="@+id/savedCasesBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="Save"
+        app:layout_constraintEnd_toEndOf="@+id/ibanTxt"
+        app:layout_constraintTop_toBottomOf="@+id/ibanTxt" />
+
+    <Button
+        android:id="@+id/contributeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Contribute"
+        app:layout_constraintStart_toStartOf="@+id/ibanTxt"
+        app:layout_constraintTop_toBottomOf="@+id/ibanTxt" />
+
+    <TextView
+        android:id="@+id/ibanTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Iban"
+        app:layout_constraintEnd_toEndOf="@+id/expirationDateTxt"
+        app:layout_constraintStart_toStartOf="@+id/expirationDateTxt"
+        app:layout_constraintTop_toBottomOf="@+id/expirationDateTxt" />
+</androidx.constraintlayout.widget.ConstraintLayout>
