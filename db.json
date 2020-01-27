@@ -1,0 +1,37 @@
+{
+  "cases": [
+    {
+      "id": 1,
+      "FullName": "Akritidis Theodoros",
+      "BriefDescription": "Tags for case Akritidis",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ",
+      "ExpirationDate": "29/5/2021",
+      "Amount": "10000" ,
+      "Iban": "GR111111111111111"
+
+    },
+
+    {
+      "id": 2,
+      "FullName": "Bougiouklis Dimitrios",
+      "BriefDescription": "Tags for case Bougiouklis",
+      "Description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque  ",
+      "ExpirationDate": "21/8/2020",
+      "Amount": "20000" ,
+      "Iban": "GR222222222222222"
+
+    },
+
+    {
+      "id": 3,
+      "FullName": "Papadopoulos Giorgos",
+      "BriefDescription": "Tags for case Papadopoulos",
+      "Description": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising ",
+      "Amount": "30000",
+      "ExpirationDate": "14/3/2020",
+      "Iban": "GR333333333333333"
+
+    }
+  ]
+
+}
