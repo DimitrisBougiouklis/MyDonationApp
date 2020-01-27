@@ -12,7 +12,7 @@ import androidx.annotation.NonNull;
 import java.util.ArrayList;
 
 public class CasesAdapter extends ArrayAdapter<Case> {
-    //static ArrayList<Case> cases;
+
     private Context context;
 
     public CasesAdapter(Context context, ArrayList<Case> objects) {
@@ -31,7 +31,7 @@ public class CasesAdapter extends ArrayAdapter<Case> {
 
 
 
-       // Case aCase = cases.get(position);
+        // Case aCase = cases.get(position);
         Case aCase = MainActivity.cases.get(position);
 
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -51,3 +51,4 @@ public class CasesAdapter extends ArrayAdapter<Case> {
 
 
 }
+

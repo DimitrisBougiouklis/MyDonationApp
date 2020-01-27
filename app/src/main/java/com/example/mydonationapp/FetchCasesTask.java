@@ -20,17 +20,9 @@ import static com.example.mydonationapp.MainActivity.cases;
 
 public class FetchCasesTask extends AsyncTask<String,Void, ArrayList<Case>> {
 
-    //static ArrayList<Case> cases;
-
     private final String LOG_TAG = FetchCasesTask.class.getSimpleName();
-
-
     public static final String SERVICE_BASE_URL = "http://my-json-server.typicode.com/";
-
-
     private CasesAdapter casesAdapter;
-
-
 
     public FetchCasesTask(CasesAdapter casesAdapter){
         this.casesAdapter = casesAdapter;
@@ -46,7 +38,7 @@ public class FetchCasesTask extends AsyncTask<String,Void, ArrayList<Case>> {
 
         try {
 
-            final String CASES_URL  = "DimitrisBougiouklis/MyDonation/db";
+            final String CASES_URL  = "DimitrisBougiouklis/MyDonationApp/db";
 
             Uri builtUri = Uri.parse(SERVICE_BASE_URL + CASES_URL);
 

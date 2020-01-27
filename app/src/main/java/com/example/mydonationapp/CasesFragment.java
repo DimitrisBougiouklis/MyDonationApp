@@ -41,25 +41,25 @@ public class CasesFragment extends Fragment {
         FetchCasesTask fetchCasesTask = new FetchCasesTask(casesAdapter);
         fetchCasesTask.execute();
     }
-    
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-                             
+
         View rootView = inflater.inflate(R.layout.fragment_main, container, false);
 
 
-        
+
 
 
         final ListView casesListView = (ListView)rootView.findViewById(R.id.listview_cases);
-     
-       casesListView.setAdapter(casesAdapter);
+
+        casesListView.setAdapter(casesAdapter);
 
 
 
 
-       casesListView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+        casesListView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position , long id){
                 Intent intent = new Intent(getActivity(), FullCaseDescription.class);

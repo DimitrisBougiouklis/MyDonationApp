@@ -27,7 +27,6 @@ public class MainActivity extends AppCompatActivity  {
 
 
     static ArrayList<Case> cases;
-    static ArrayList<Case> savedCases = new ArrayList<>();
     static SQLiteDatabase db;
 
 
@@ -45,26 +44,23 @@ public class MainActivity extends AppCompatActivity  {
                 Context.MODE_PRIVATE,
                 null);
 
-
         db.execSQL("CREATE TABLE IF NOT EXISTS \"Account\" (\n" +
-                "\t\"id\"\tINTEGER ,\n" +
-                "\t\"UserName\"\tTEXT ,\n" +
-                "\t\"Email\"\tTEXT ,\n" +
+                "\t\"id\"\tINTEGER,\n" +
+                "\t\"UserName\"\tTEXT,\n" +
+                "\t\"Email\"\tTEXT,\n" +
+                "\tPRIMARY KEY(\"id\")\n" +
+                ");");
+
+
+        db.execSQL("CREATE TABLE IF NOT EXISTS \"Photo\" (\n" +
+                "\t\"id\"\tINTEGER,\n" +
+                "\t\"photo\"\tBLOB,\n" +
                 "\tPRIMARY KEY(\"id\")\n" +
                 ");");
 
 
 
-        db.execSQL("CREATE TABLE IF NOT EXISTS \"saveCases\" (\n" +
-                "\t\"CaseId\"\tINTEGER NOT NULL,\n" +
-                "\tPRIMARY KEY(\"CaseId\")\n" +
-                ");");
-
-
-
-
-
-       Button btn = (Button)findViewById(R.id.preferencesBtn);
+        Button btn = (Button)findViewById(R.id.preferencesBtn);
 
         btn.setOnClickListener(new View.OnClickListener() {
                                    @Override
@@ -75,14 +71,6 @@ public class MainActivity extends AppCompatActivity  {
 
 
         );
-
-
-
-
-
-
-
-
 
 
     }
